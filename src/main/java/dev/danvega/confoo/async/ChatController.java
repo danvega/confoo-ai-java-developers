@@ -17,8 +17,8 @@ public class ChatController {
     @GetMapping("/stream")
     public Flux<String> stream() {
         return chatClient.prompt()
-                .user("I am visiting Montreal, CA can you give me 10 places I must visit")
-                .stream()
+                .user("I'm visiting Montreal CA, give me 10 places I need to go")
+                .stream() // .call() blocking vs .stream() non-blocking
                 .content();
     }
 

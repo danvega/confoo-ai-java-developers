@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ModelComparison {
 
     private final ChatClient chatClient;
+    private final String USER_PROMPT = "Can you give me an up to date list of popular large language models and their current context window size?";
 
     public ModelComparison(ChatClient.Builder builder) {
         this.chatClient = builder.build();
@@ -21,7 +22,7 @@ public class ModelComparison {
     @GetMapping("/models")
     public String models() {
         return chatClient.prompt()
-                .user("Can you give me an up to date list of popular large language models and their current context window size")
+                .user(USER_PROMPT)
                 .call()
                 .content();
     }
@@ -84,7 +85,7 @@ public class ModelComparison {
                 ]
                 """;
         return chatClient.prompt()
-                .user("Give me 1 llm per company with the largest context window")
+                .user(USER_PROMPT)
                 .system(system)
                 .call()
                 .content();

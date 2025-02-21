@@ -13,6 +13,9 @@ public class DatTimeChatController {
         this.chatClient = builder.build();
     }
 
+    /*
+     * .tools(new DatTimeTools())
+     */
     @GetMapping("/tools")
     public String tools() {
         return chatClient.prompt("What day is tomorrow?")

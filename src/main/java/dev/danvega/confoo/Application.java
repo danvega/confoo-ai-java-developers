@@ -13,21 +13,6 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 
-
-	@Bean
-	CommandLineRunner commandLineRunner(ChatClient.Builder builder) {
-		return args -> {
-			var client = builder.build();
-
-			String content = client.prompt()
-					.user("Tell me an Interesting fact about Spring AI")
-					.call()
-					.content();
-
-			System.out.println(content);
-		};
-	}
-
 }
 
 
