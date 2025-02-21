@@ -11,8 +11,6 @@ Spring AI makes it easy for Java developers to integrate powerful AI capabilitie
 ## Agenda
 
 - [Create your first App](#creating-your-first-app)
-    - start.spring.io
-    - OpenAI API
 - [Synchronous vs Asynchronous](#synchronous-vs-asynchronous)
 - [Prompting](#prompt)
 - [Structured Output](#structured-output)
