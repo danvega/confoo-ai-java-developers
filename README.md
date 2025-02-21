@@ -198,7 +198,6 @@ public class VacationPlan {
 }
 ```
 
-
 ## Multimodal
 
 Multimodality refers to a model’s ability to simultaneously understand and process information from various sources, 
