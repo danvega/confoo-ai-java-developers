@@ -340,3 +340,14 @@ public class DatTimeChatController {
 
 }
 ```
+
+## Presentation Notes
+
+- Open Tabs
+  - https://github.com/danvega/confoo-ai-java-developers
+  - https://start.spring.io
+  - https://docs.spring.io/spring-ai/reference/
+- Docker Running?
+  - Probably not unless we can't get to OpenAI for some reason
+- IntelliJ
+  - Open up to starting code
