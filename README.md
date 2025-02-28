@@ -351,3 +351,4 @@ public class DatTimeChatController {
   - Probably not unless we can't get to OpenAI for some reason
 - IntelliJ
   - Open up to starting code
+- Terminal open full screen for http calls
